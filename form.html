@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form</title>
+    <link rel="shortcut icon" type="image/x-icon" href="login.png"/>
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="form_styling.css" />
+    <link rel="stylesheet" type="text/css" href="background.css" />
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header"><h1>Create Account</h1></div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Username:</label>
+                <input type="text" placeholder="Enter your Fullname" id="username"/>
+			    <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+             </div>
+
+             <div class="form-control">
+                <label for="username">Email:</label>
+                <input type="email" placeholder="Enter your Email-Id" id="email"/>
+			    <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+             </div>
+
+             <div class="form-control">
+                <label for="username">Phone:</label>
+                <input type="tel" placeholder="Enter your Phone Number" id="phone"/>
+			    <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+             </div>
+
+             <div class="form-control">
+                <label for="username">Password:</label>
+                <input type="password" placeholder="Enter a password" id="password"/>
+			    <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+             </div>
+
+             <div class="form-control">
+                <label for="username">Confirm Password:</label>
+                <input type="password" placeholder="Re-enter the password" id="c_password"/>
+			    <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+             </div>        
+             <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

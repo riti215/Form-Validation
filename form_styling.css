@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b0a3d4;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Rubik";
+}
+
+.container {
+  background-color: #b0a3d4;
+  border: 5px;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+
+  position: fixed;
+  right: 13rem;
+  border-radius: 10px;
+}
+
+.header {
+  background-color: #7d80da;
+  padding: 1.3rem;
+  border-radius: 10px 10px 0 0;
+  height: 5rem;
+  text-align: center;
+  color: #ffcb9a;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #65655e;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  border-color: #b0a3d4;
+  border-radius: 10px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #65655e;
+}
+
+.form-control.error input {
+  border-color: rgb(255, 71, 71);
+}
+
+.form-control.success input {
+  border-color: rgb(0, 192, 0);
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 38px;
+  right: 10px;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: rgb(255, 71, 71);
+  visibility: visible;
+}
+
+.form-control.success i.fa-check-circle {
+  border-color: rgb(0, 192, 0);
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: rgb(255, 71, 71);
+}
+
+.form button {
+  background-color: #ffcb9a;
+  border-radius: 10px;
+  border: 2px solid #65655e;
+  color: #65655e;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+  padding: 0.4rem;
+  width: 100%;
+  outline: none;
+}
+
+.form button:hover {
+  border: 2px solid #65655e;
+  background-color: #65655e;
+  color: #ffcb9a;
+}
